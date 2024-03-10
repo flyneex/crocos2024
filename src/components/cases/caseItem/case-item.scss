@@ -1,0 +1,223 @@
+@import '../../../styles/variables';
+@import '../../../styles/main';
+
+.container-single {
+	max-width: 1165px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.header_in_bottom_info_phone::before {
+	content: url(../../../assets/phone-white.svg);
+}
+
+.case {
+	margin-top: 92px;
+	margin-bottom: 195px;
+	&_box {
+		&_single {
+			&_info {
+				h5 {
+					font-size: 32px;
+					font-weight: 700;
+					line-height: 45px;
+					margin-bottom: 15px;
+				}
+				p {
+					font-size: 20px;
+					line-height: 28px;
+				}
+				.add {
+					@include flex(flex, space-between, center);
+					margin-top: 30px;
+					margin-bottom: 50px;
+					.tags {
+						color: var(--silver);
+						font-size: 20px;
+						line-height: 32px;
+					}
+					.like {
+						background-color: var(--blue);
+						padding: 10px;
+						font-size: 20px;
+						color: white;
+						&::before {
+							content: url('../../../assets/like.svg');
+							display: inline-block;
+							margin-right: 10px;
+							// vertical-align: middle;
+						}
+					}
+					.views {
+						background-color: var(--light);
+						padding: 10px;
+						font-size: 20px;
+						color: var(--silver);
+						&::before {
+							content: url('../../../assets/eye.svg');
+							display: inline-block;
+							margin-right: 10px;
+							// vertical-align: middle;
+						}
+					}
+				}
+				.text {
+					max-width: 865px;
+					margin: 0 auto;
+					font-size: 16px;
+					line-height: 32px;
+					margin-top: 54px;
+				}
+			}
+			&_team {
+				max-width: 865px;
+				margin: 0 auto;
+				margin-bottom: 50px;
+				margin-top: 58px;
+				h5 {
+					font-size: 32px;
+					font-weight: 700;
+					line-height: 45px;
+					margin-bottom: 37px;
+				}
+				&_dev {
+					// @include grid(grid, repeat(4, 1fr));
+					display: flex;
+					gap: 70px;
+					&-item {
+						position: relative;
+						padding: 20px 0;
+						&::before {
+							content: '';
+							display: block;
+							width: 85px;
+							height: 82px;
+							background-color: #fcfaff;
+							position: absolute;
+							top: 0;
+							left: 0;
+							z-index: -1;
+						}
+					}
+					h6 {
+						font-size: 20px;
+						font-weight: 400;
+						line-height: 28px;
+						letter-spacing: -1px;
+					}
+					p {
+						color: var(--silver);
+						font-size: 16px;
+						font-weight: 600;
+						line-height: 22px;
+						letter-spacing: -1px;
+					}
+				}
+			}
+			&_links {
+				max-width: 865px;
+				margin: 0 auto;
+				&-socials {
+					@include flex(flex, space-between, center);
+					gap: 25px;
+					margin-bottom: 53px;
+				}
+				&-enbek {
+					font-size: 40px;
+					line-height: 56px;
+					margin-bottom: 60px;
+					text-align: center;
+					color: var(--black);
+					a {
+						color: var(--black);
+						border-bottom: 2px solid var(--black);
+					}
+				}
+				&-allcase {
+					font-size: 48px;
+					line-height: 67px;
+					color: var(--black);
+					margin-bottom: 48px;
+					text-align: center;
+				}
+				&-btn {
+					background: var(--blue);
+					padding: 27px 0;
+					text-align: center;
+					border: 2px solid transparent;
+					&:hover {
+						background-color: transparent;
+						border-color: var(--blue);
+					}
+					&:hover a {
+						color: var(--blue);
+					}
+					// &:hover a svg {
+					// 	color: blue;
+					// }
+					a {
+						color: white;
+						font-size: 20px;
+						font-weight: 600;
+						line-height: 28px;
+						&::after {
+							content: url('../../../assets/btn-arrow.svg');
+							display: inline-block;
+							margin-left: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer_top_menu {
+	margin-top: 100px;
+}
+
+.cta_box_title {
+	margin-bottom: 100px;
+}
+
+@media (max-width: 1165px) {
+	.container-single {
+		width: calc(100% - 10%);
+	}
+}
+
+@media (max-width: 992px) {
+	.case {
+		&_box {
+			&_single {
+				&_info {
+					.add {
+						flex-direction: column;
+						.tags {
+							margin-bottom: 25px;
+						}
+					}
+				}
+				&_team {
+					&_dev {
+						@include grid(grid, repeat(2, 1fr));
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.case {
+		&_box {
+			&_single {
+				&_team {
+					&_dev {
+						@include grid(grid, repeat(1, 1fr));
+					}
+				}
+			}
+		}
+	}
+}

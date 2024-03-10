@@ -1,0 +1,157 @@
+@import '../../../styles/variables';
+@import '../../../styles/main';
+
+.container-single {
+	max-width: 1165px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.header_in_bottom_info_phone::before {
+	content: url(../../../assets/phone-white.svg);
+}
+
+.iblog {
+	margin-top: 90px;
+	margin-bottom: 90px;
+	&_box {
+		&_single {
+			h5 {
+				font-size: 32px;
+				line-height: 45px;
+				margin-bottom: 35px;
+			}
+			&_add {
+				@include flex(flex, space-between, center);
+				gap: 30px;
+				margin-bottom: 50px;
+				.tags {
+					color: var(--silver);
+					font-size: 20px;
+					line-height: 32px;
+				}
+				.views {
+					background-color: var(--light);
+					padding: 10px 14px;
+					color: var(--silver);
+					&::before {
+						content: url('../../../assets/eye.svg');
+						display: inline-block;
+						margin-right: 10px;
+						vertical-align: middle;
+					}
+				}
+			}
+			&_btn {
+				a {
+					color: white;
+					font-size: 20px;
+					line-height: 28px;
+					div::after {
+						content: url('../../../assets/btn-arrow.svg');
+						display: inline-block;
+						margin-left: 10px;
+					}
+					div {
+						background: var(--blue);
+						font-weight: 600;
+						padding: 27px 0;
+						text-align: center;
+						border: 2px solid transparent;
+						&:hover {
+							background-color: transparent;
+							border-color: var(--blue);
+						}
+						&:hover {
+							color: var(--blue);
+						}
+						// &:hover a svg {
+						// 	color: blue;
+						// }
+					}
+				}
+			}
+			&_info {
+				max-width: 864px;
+				margin: 0 auto;
+				margin-top: 53px;
+				&-content {
+					h6 {
+						font-size: 16px;
+						font-weight: 700;
+						line-height: 32px;
+						margin-top: 30px;
+					}
+					p {
+						margin-bottom: 30px;
+						line-height: 32px;
+					}
+					ul li {
+						margin-bottom: 20px;
+					}
+				}
+			}
+			&_share {
+				@include flex(flex, center, center);
+				gap: 50px;
+				background-color: var(--light);
+				padding: 21px 0;
+				margin-top: 50px;
+				margin-bottom: 30px;
+				span {
+					font-size: 20px;
+					font-weight: 700;
+					line-height: 28px;
+				}
+				.socials {
+					@include flex(flex, space-between, center);
+					gap: 15px;
+				}
+				.vk,
+				.tw,
+				.fb {
+					display: inline-flex;
+					background-color: var(--blue);
+					border-radius: 50%;
+				}
+				.fb {
+					padding: 8px 14px 9px;
+				}
+				.tw {
+					padding: 13px 9px 11px 11px;
+				}
+				.vk {
+					padding: 13px 9px;
+				}
+			}
+		}
+	}
+}
+
+.cta_box_title {
+	margin-bottom: 98px;
+}
+.footer_top_menu {
+	margin-top: 105px;
+}
+
+@media (max-width: 1165px) {
+	.container-single {
+		width: calc(100% - 10%);
+	}
+}
+
+@media (max-width: 768px) {
+	.iblog {
+		&_box {
+			&_single {
+				&_add {
+					flex-direction: column;
+					.tags {
+						margin-bottom: 25px;
+					}
+				}
+			}
+		}
+	}
+}

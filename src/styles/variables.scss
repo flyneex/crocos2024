@@ -1,0 +1,18 @@
+:root {
+	--blue: #0066ff;
+	--black: #070a25;
+	--gray: #f3f4f9;
+	--silver: #8f9cbb;
+	--light: #f6faff;
+}
+
+@mixin flex($flex, $justify-content, $align-items) {
+	display: $flex;
+	justify-content: $justify-content;
+	align-items: $align-items;
+}
+
+@mixin grid($grid, $grid-templates-columns) {
+	display: grid;
+	grid-template-columns: $grid-templates-columns;
+}

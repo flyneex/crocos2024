@@ -1,0 +1,241 @@
+@font-face {
+	font-family: 'TT Lakes Neue Expanded';
+	src: url('../assets/fonts/TTLakesNeueExp-BoldIt.eot');
+	src: local('TT Lakes Neue Expanded Bold Italic'),
+		local('TTLakesNeueExp-BoldIt'),
+		url('../assets/fonts/TTLakesNeueExp-BoldIt.eot?#iefix')
+			format('embedded-opentype'),
+		url('../assets/fonts/TTLakesNeueExp-BoldIt.woff2') format('woff2'),
+		url('../assets/fonts/TTLakesNeueExp-BoldIt.woff') format('woff'),
+		url('../assets/fonts/TTLakesNeueExp-BoldIt.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'TT Lakes Neue Expanded';
+	src: url('../assets/fonts/TTLakesNeueExp-Black.eot');
+	src: local('TT Lakes Neue Expanded Black'), local('TTLakesNeueExp-Black'),
+		url('TTLakesNeueExp-Black.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/TTLakesNeueExp-Black.woff2') format('woff2'),
+		url('../assets/fonts/TTLakesNeueExp-Black.woff') format('woff'),
+		url('../assets/fonts/TTLakesNeueExp-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TT Lakes Neue Expanded';
+	src: url('../assets/fonts/TTLakesNeueExp-BlackIt.eot');
+	src: local('TT Lakes Neue Expanded Black Italic'),
+		local('TTLakesNeueExp-BlackIt'),
+		url('TTLakesNeueExp-BlackIt.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/TTLakesNeueExp-BlackIt.woff2') format('woff2'),
+		url('../assets/fonts/TTLakesNeueExp-BlackIt.woff') format('woff'),
+		url('../assets/fonts/TTLakesNeueExp-BlackIt.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'TT Lakes Neue Expanded';
+	src: url('../assets/fonts/TTLakesNeueExp-XBold.eot');
+	src: local('TT Lakes Neue Expanded ExtraBold'), local('TTLakesNeueExp-XBold'),
+		url('../assets/fonts/TTLakesNeueExp-XBold.eot?#iefix')
+			format('embedded-opentype'),
+		url('../assets/fonts/TTLakesNeueExp-XBold.woff2') format('woff2'),
+		url('../assets/fonts/TTLakesNeueExp-XBold.woff') format('woff'),
+		url('../assets/fonts/TTLakesNeueExp-XBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TT Lakes Neue Expanded';
+	src: url('../assets/fonts/TTLakesNeueExp-Italic.eot');
+	src: local('TT Lakes Neue Expanded Italic'), local('TTLakesNeueExp-Italic'),
+		url('../assets/fonts/TTLakesNeueExp-Italic.eot?#iefix')
+			format('embedded-opentype'),
+		url('../assets/fonts/TTLakesNeueExp-Italic.woff2') format('woff2'),
+		url('../assets/fonts/TTLakesNeueExp-Italic.woff') format('woff'),
+		url('../assets/fonts/TTLakesNeueExp-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'TT Lakes Neue Expanded';
+	src: url('../assets/fonts/TTLakesNeueExp-XLightIt.eot');
+	src: local('TT Lakes Neue Expanded ExtraLight Italic'),
+		local('TTLakesNeueExp-XLightIt'),
+		url('../assets/fonts/TTLakesNeueExp-XLightIt.eot?#iefix')
+			format('embedded-opentype'),
+		url('../assets/fonts/TTLakesNeueExp-XLightIt.woff2') format('woff2'),
+		url('../assets/fonts/TTLakesNeueExp-XLightIt.woff') format('woff'),
+		url('../assets/fonts/TTLakesNeueExp-XLightIt.ttf') format('truetype');
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'TT Lakes Neue Expanded';
+	src: url('../assets/fonts/TTLakesNeueExp-ThinIt.eot');
+	src: local('TT Lakes Neue Expanded Thin Italic'),
+		local('TTLakesNeueExp-ThinIt'),
+		url('../assets/fonts/TTLakesNeueExp-ThinIt.eot?#iefix')
+			format('embedded-opentype'),
+		url('../assets/fonts/TTLakesNeueExp-ThinIt.woff2') format('woff2'),
+		url('../assets/fonts/TTLakesNeueExp-ThinIt.woff') format('woff'),
+		url('../assets/fonts/TTLakesNeueExp-ThinIt.ttf') format('truetype');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'TT Lakes Neue Expanded';
+	src: url('../assets/fonts/TTLakesNeueExp-Thin.eot');
+	src: local('TT Lakes Neue Expanded Thin'), local('TTLakesNeueExp-Thin'),
+		url('../assets/fonts/TTLakesNeueExp-Thin.eot?#iefix')
+			format('emb../assets/fonts/edded-opentype'),
+		url('../assets/fonts/TTLakesNeueExp-Thin.woff2') format('woff2'),
+		url('../assets/fonts/TTLakesNeueExp-Thin.woff') format('woff'),
+		url('../assets/fonts/TTLakesNeueExp-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TT Lakes Neue Expanded';
+	src: url('../assets/fonts/TTLakesNeueExp-XBoldIt.eot');
+	src: local('TT Lakes Neue Expanded ExtraBold Italic'),
+		local('TTLakesNeueExp-XBoldIt'),
+		url('../assets/fonts/TTLakesNeueExp-XBoldIt.eot?#iefix')
+			format('emb../assets/fonts/edded-opentype'),
+		url('../assets/fonts/TTLakesNeueExp-XBoldIt.woff2') format('woff2'),
+		url('../assets/fonts/TTLakesNeueExp-XBoldIt.woff') format('woff'),
+		url('../assets/fonts/TTLakesNeueExp-XBoldIt.ttf') format('truetype');
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'TT Lakes Neue Expanded';
+	src: url('../assets/fonts/TTLakesNeueExp-LightIt.eot');
+	src: local('TT Lakes Neue Expanded Light Italic'),
+		local('TTLakesNeueExp-LightIt'),
+		url('../assets/fonts/TTLakesNeueExp-LightIt.eot?#iefix')
+			format('emb../assets/fonts/edded-opentype'),
+		url('../assets/fonts/TTLakesNeueExp-LightIt.woff2') format('woff2'),
+		url('../assets/fonts/TTLakesNeueExp-LightIt.woff') format('woff'),
+		url('../assets/fonts/TTLakesNeueExp-LightIt.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'TT Lakes Neue Expanded';
+	src: url('../assets/fonts/TTLakesNeueExp-Regular.eot');
+	src: local('TT Lakes Neue Expanded'), local('TTLakesNeueExp-Regular'),
+		url('../assets/fonts/TTLakesNeueExp-Regular.eot?#iefix')
+			format('emb../assets/fonts/edded-opentype'),
+		url('../assets/fonts/TTLakesNeueExp-Regular.woff2') format('woff2'),
+		url('../assets/fonts/TTLakesNeueExp-Regular.woff') format('woff'),
+		url('../assets/fonts/TTLakesNeueExp-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TT Lakes Neue Expanded';
+	src: url('../assets/fonts/TTLakesNeueExp-DBoldIt.eot');
+	src: local('TT Lakes Neue Expanded DemiBold Italic'),
+		local('TTLakesNeueExp-DBoldIt'),
+		url('../assets/fonts/TTLakesNeueExp-DBoldIt.eot?#iefix')
+			format('emb../assets/fonts/edded-opentype'),
+		url('../assets/fonts/TTLakesNeueExp-DBoldIt.woff2') format('woff2'),
+		url('../assets/fonts/TTLakesNeueExp-DBoldIt.woff') format('woff'),
+		url('../assets/fonts/TTLakesNeueExp-DBoldIt.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'TT Lakes Neue Expanded';
+	src: url('../assets/fonts/TTLakesNeueExp-Medium.eot');
+	src: local('TT Lakes Neue Expanded Medium'), local('TTLakesNeueExp-Medium'),
+		url('../assets/fonts/TTLakesNeueExp-Medium.eot?#iefix')
+			format('emb../assets/fonts/edded-opentype'),
+		url('../assets/fonts/TTLakesNeueExp-Medium.woff2') format('woff2'),
+		url('../assets/fonts/TTLakesNeueExp-Medium.woff') format('woff'),
+		url('../assets/fonts/TTLakesNeueExp-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TT Lakes Neue Expanded';
+	src: url('../assets/fonts/TTLakesNeueExp-MediumIt.eot');
+	src: local('TT Lakes Neue Expanded Medium Italic'),
+		local('TTLakesNeueExp-MediumIt'),
+		url('../assets/fonts/TTLakesNeueExp-MediumIt.eot?#iefix')
+			format('emb../assets/fonts/edded-opentype'),
+		url('../assets/fonts/TTLakesNeueExp-MediumIt.woff2')
+			format('wof../assets/fonts/f2'),
+		url('../assets/fonts/TTLakesNeueExp-MediumIt.woff') format('woff'),
+		url('../assets/fonts/TTLakesNeueExp-MediumIt.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'TT Lakes Neue Expanded';
+	src: url('../assets/fonts/TTLakesNeueExp-Bold.eot');
+	src: local('TT Lakes Neue Expanded Bold'), local('TTLakesNeueExp-Bold'),
+		url('../assets/fonts/TTLakesNeueExp-Bold.eot?#iefix')
+			format('emb../assets/fonts/edded-opentype'),
+		url('../assets/fonts/TTLakesNeueExp-Bold.woff2') format('woff2'),
+		url('../assets/fonts/TTLakesNeueExp-Bold.woff') format('woff'),
+		url('../assets/fonts/TTLakesNeueExp-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TT Lakes Neue Expanded';
+	src: url('../assets/fonts/TTLakesNeueExp-XLight.eot');
+	src: local('TT Lakes Neue Expanded ExtraLight'),
+		local('TTLakesNeueExp-XLight'),
+		url('../assets/fonts/TTLakesNeueExp-XLight.eot?#iefix')
+			format('emb../assets/fonts/edded-opentype'),
+		url('../assets/fonts/TTLakesNeueExp-XLight.woff2') format('woff2'),
+		url('../assets/fonts/TTLakesNeueExp-XLight.woff') format('woff'),
+		url('../assets/fonts/TTLakesNeueExp-XLight.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TT Lakes Neue Expanded';
+	src: url('../assets/fonts/TTLakesNeueExp-DBold.eot');
+	src: local('TT Lakes Neue Expanded DemiBold'), local('TTLakesNeueExp-DBold'),
+		url('../assets/fonts/TTLakesNeueExp-DBold.eot?#iefix')
+			format('emb../assets/fonts/edded-opentype'),
+		url('../assets/fonts/TTLakesNeueExp-DBold.woff2') format('woff2'),
+		url('../assets/fonts/TTLakesNeueExp-DBold.woff') format('woff'),
+		url('../assets/fonts/TTLakesNeueExp-DBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TT Lakes Neue Expanded';
+	src: url('../assets/fonts/TTLakesNeueExp-Light.eot');
+	src: local('TT Lakes Neue Expanded Light'), local('TTLakesNeueExp-Light'),
+		url('../assets/fonts/TTLakesNeueExp-Light.eot?#iefix')
+			format('embedded-opentype'),
+		url('../assets/fonts/TTLakesNeueExp-Light.woff2') format('woff2'),
+		url('../assets/fonts/TTLakesNeueExp-Light.woff') format('woff'),
+		url('../assets/fonts/TTLakesNeueExp-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}

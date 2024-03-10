@@ -1,0 +1,73 @@
+@import '../../styles/variables';
+@import '../../styles/main';
+
+.cases_in {
+	margin-top: 85px;
+	margin-bottom: 444px;
+	&::before {
+		content: url('../../assets/cube_color.svg');
+		display: block;
+		position: absolute;
+		top: 150px;
+		left: -7px;
+	}
+	.title {
+		margin-bottom: 73px;
+	}
+	&_filter {
+		position: relative;
+		margin-bottom: 90px;
+		ul {
+			@include flex(flex, space-between, center);
+			flex-wrap: wrap;
+			column-gap: 34px;
+			row-gap: 10px;
+			li {
+				color: var(--black);
+				font-size: 24px;
+				font-weight: 600;
+				line-height: 34px;
+			}
+		}
+	}
+	&_box {
+		margin-bottom: 117px;
+		&_item {
+			h5 {
+				font-weight: 700;
+			}
+			a {
+				color: var(--black);
+			}
+		}
+	}
+	&_bg.cases_in_bg {
+		padding-top: 180px;
+		&:after {
+			height: 106%;
+			top: -8px;
+			left: -16px;
+		}
+	}
+}
+
+.cta_box_title {
+	margin-bottom: 87px;
+}
+
+.footer_top_menu {
+	margin-top: 104px;
+}
+
+@media (max-width: 1760px) {
+	.cases_in {
+		&::before {
+			content: none;
+		}
+		&_filter {
+			ul {
+				justify-content: center;
+			}
+		}
+	}
+}

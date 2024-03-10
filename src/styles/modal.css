@@ -1,0 +1,121 @@
+:root {
+  --blue: #0066ff;
+  --black: #070a25;
+  --gray: #f3f4f9;
+  --silver: #8f9cbb;
+  --light: #f6faff;
+}
+
+.modal {
+  display: none;
+  background: rgba(0, 102, 255, 0.8196078431);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+.modal_body {
+  padding: 100px 80px;
+}
+.modal_title {
+  position: relative;
+  font-size: 96px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal_title .cross {
+  cursor: pointer;
+}
+.modal_form {
+  margin-bottom: 60px;
+}
+.modal_form input {
+  display: block;
+  background: transparent;
+  color: white;
+  font-size: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2588235294);
+  margin-bottom: 40px;
+  padding: 30px 0;
+  outline: none;
+  width: 100%;
+}
+.modal_form input::-moz-placeholder {
+  color: white;
+  font-size: 32px;
+  line-height: 45px;
+}
+.modal_form input::placeholder {
+  color: white;
+  font-size: 32px;
+  line-height: 45px;
+}
+.modal_form input:focus {
+  border-color: white;
+}
+.modal_btn {
+  padding: 40px 0;
+  border-radius: 77px;
+  border: 1px solid white;
+  text-align: center;
+  cursor: pointer;
+  transition: all 400ms ease-in;
+}
+.modal_btn:hover {
+  background-color: var(--blue);
+}
+.modal_btn input {
+  color: white;
+  background-color: transparent;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+@media (max-width: 1760px) {
+  .modal {
+    overflow: auto;
+  }
+  .modal_title {
+    font-size: 5vw;
+  }
+}
+@media (max-width: 1366px) {
+  .modal_title {
+    font-size: 5vw;
+  }
+}
+@media (max-width: 992px) {
+  .modal_body {
+    padding: 30px;
+  }
+  .modal_title {
+    font-size: 5vw;
+    line-height: 90px;
+  }
+  .cross img {
+    width: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .modal_form input::-moz-placeholder {
+    font-size: 3vw;
+  }
+  .modal_form input::placeholder {
+    font-size: 3vw;
+  }
+  .modal_title {
+    margin-bottom: 20px;
+  }
+  .modal_btn {
+    padding: 20px 0;
+  }
+}/*# sourceMappingURL=modal.css.map */

@@ -1,0 +1,32 @@
+@import '../../styles/variables';
+@import '../../styles/main';
+
+.services_in {
+	margin-top: 85px;
+	margin-bottom: 335px;
+	&_box {
+		&_item {
+			&::before {
+				background: url(../../assets/mesh-gradient.png);
+			}
+			&::after {
+				content: url(../../assets/arrow-right.svg);
+			}
+		}
+	}
+	.title {
+		margin-bottom: 77px;
+	}
+}
+
+.cta_box_title {
+	margin-bottom: 87px;
+}
+
+.services_box_item h5 {
+	bottom: 60px;
+}
+
+.footer_top_menu {
+	margin-top: 103px;
+}
