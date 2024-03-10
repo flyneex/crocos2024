@@ -119,6 +119,7 @@ strong {
 }
 
 .header {
+	margin-bottom: 171.5px;
 	&_box {
 		padding-top: 45px;
 	}
@@ -302,31 +303,85 @@ strong {
 			@include flex(flex, center, center);
 			position: relative;
 			width: 50%;
-			// &::after {
-			// 	content: url('../assets/play.svg');
-			// 	position: absolute;
-			// 	top: 50%;
-			// 	left: 50%;
-			// 	transform: translate(-50%, -50%);
-			// }
+			cursor: pointer;
+			margin-bottom: 100px;
+			&::before {
+				content: url('../assets/bg-smart.png');
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			&::after {
+				content: url('../assets/playcase.svg');
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				z-index: 3;
+			}
+			&-inner {
+				position: relative;
+				&::before {
+					animation: 1s pulse infinite linear;
+					border: 1px solid #ffffff8c;
+					content: '';
+					width: 100%;
+					display: block;
+					position: absolute;
+					height: auto;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					border-radius: 100%;
+					transform-origin: center center;
+					opacity: 0;
+					box-sizing: border-box;
+				}
+				&::after {
+					animation: 1s pulse2 infinite linear;
+					border: 1px solid #ffffff8c;
+					content: '';
+					width: 100%;
+					display: block;
+					position: absolute;
+					height: auto;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					border-radius: 100%;
+					transform-origin: center center;
+					opacity: 0;
+					box-sizing: border-box;
+				}
+			}
+			img {
+				/* animation: hoverWave linear 1s infinite; */
+				border-radius: 50%;
+				position: relative;
+				z-index: 2;
+			}
 		}
 		&_text {
-			width: 600px;
+			/* width: 600px; */
+			width: 50%;
 			h1 {
 				color: white;
 				text-transform: uppercase;
 				font-weight: 900;
-				line-height: 134.4px;
+				line-height: 124.4px;
 				span {
 					display: block;
 					font-size: 36px;
 					text-transform: none;
-					font-weight: 400;
+					font-weight: 200;
 					line-height: 50.4px;
 				}
 			}
 			&_subtext {
-				padding: 30px 0 87px 0;
+				padding: 35px 0 90px 0;
 				color: white;
 				font-size: 20px;
 			}
@@ -379,7 +434,7 @@ strong {
 }
 
 .app {
-	margin-top: -83px;
+	margin-top: -65px;
 	cursor: pointer;
 	&_box {
 		position: relative;
@@ -546,17 +601,22 @@ strong {
 	position: relative;
 	&_bg {
 		margin-bottom: 165px;
+		.scrolll {
+			position: relative;
+			margin-top: 30px;
+		}
 	}
 	&_box {
 		// @include flex(flex, space-between, center);
-		@include grid(grid, repeat(3, 1fr));
+		/* @include grid(grid, repeat(3, 1fr)); */
 		gap: 30px;
 		margin-left: 3.9%;
 		// overflow-x: auto;
 		&_item {
 			overflow: hidden;
 			position: relative;
-			width: 717px;
+			/* width: 717px; */
+			width: 100%;
 			h5 {
 				color: white;
 				position: absolute;
@@ -571,7 +631,12 @@ strong {
 				font-size: 24px;
 				min-height: 66px;
 			}
-			div,
+			div {
+				transition: all 400ms ease-out;
+				overflow: hidden;
+				width: 100%;
+				height: 100%;
+			}
 			img {
 				transition: all 400ms ease-out;
 				overflow: hidden;
@@ -607,8 +672,11 @@ strong {
 	.ar-blue {
 		content: url(../assets/arr-blue.png);
 		display: block;
-		margin-left: calc(150px - 14px);
-		margin-top: 15px;
+		/* margin-left: calc(150px - 14px); */
+		/* margin-top: 15px; */
+		position: absolute;
+		top: 15px;
+		left: 135px;
 	}
 	.products_bg::after {
 		content: '';
@@ -1536,5 +1604,50 @@ strong {
 	100% {
 		transform: scale(2.8);
 		opacity: 0;
+	}
+}
+
+.swiper-horizontal .swiper-pagination {
+	position: relative;
+	text-align: left;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+	margin-top: 120px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets {
+	.swiper-pagination-bullet {
+		background: rgb(255, 255, 255);
+		width: 70px;
+		height: 2px;
+		border-radius: 0;
+	}
+	.swiper-pagination-bullet.swiper-pagination-bullet-active {
+		background-color: white;
+		height: 6px;
+		vertical-align: sub;
+	}
+}
+
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+	background: linear-gradient(90deg, #eaeef7 0%, rgba(234, 238, 247, 0) 100%);
+	display: block;
+	width: 100% !important;
+	height: 2px !important;
+	left: 0 !important;
+	.swiper-scrollbar-drag {
+		border-radius: 0;
+		background: var(--blue);
+		display: block;
+		/* width: 150px; */
+		height: 8px;
+		/* transform: translateY(-7px) !important; */
+		/* margin-bottom: -2px;
+		position: relative;
+		z-index: 1; */
 	}
 }
